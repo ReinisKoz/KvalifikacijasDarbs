@@ -1,0 +1,59 @@
+/* Resetting some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+h1, h2, p, footer {
+    margin-bottom: 20px;
+}
+
+header.ListButtons ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centers the list items */
+    gap: 20px;
+}
+
+header.ListButtons ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+header.ListButtons ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Image styling */
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #555;
+}
