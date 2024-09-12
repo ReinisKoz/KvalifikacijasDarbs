@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.ListButtons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ListButtons li {
+    display: inline;
+}
+
+.ListButtons a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.ListButtons a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* Extra padding for fixed footer */
+}
+
+img {
+    height: 560px;
+    width: 560px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+aside {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 20px;
+}
