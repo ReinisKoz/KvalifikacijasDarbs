@@ -1,5 +1,5 @@
-# KVALIFIKĀCIJAS DARBS
+# Kvalifikācijas darbs
 
-## Līdzīgas programmas https://www.higherlowergame.com/
+## Mana ideja - Izveidot mājaslapu, kuru izmantotu mazi uzņēmumi kā frizētavas, manikīra pakalpojumi. Lai atvieglotu pierakstīšanos uz noteiktu pakalpojumu
 
-### Tātad mana ideja ir ļoti līdzīga šai higher or lower spēlei, taču mana spēle būs saistīta tikai ar Latviju. Piemēram viena kategorija varētu būt naudas daudzums un tad salīdzinātu Latvijas personas, vai augums svars un daudz kas cits.
+## Mājaslapā būs iespēja izveidot profilu kā parastam lietotājam un kā uzņēmējam, lietotājs pagaidām varēs rediģēt savu profilu, pieteikties uz seansiem, uzņēmējs varēs izveidot savu page, publicēt jaunumus, un ievietot laikus un datumus uz kuriem iespējams nākt.
