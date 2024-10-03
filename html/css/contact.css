@@ -6,7 +6,7 @@
 
 ul {
     list-style: none;
-    background: #22438c;
+    background: #333;
 }
 
 ul li {
@@ -29,14 +29,14 @@ ul li ul.dropdown li{
 
 ul li ul.dropdown{
     width: 100%;
-    background: #22438c;
+    background:#333;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
 ul li a:hover {
-    background: #112C66;
+    background: #585858;
 }
 
 ul li:hover ul.dropdown{
