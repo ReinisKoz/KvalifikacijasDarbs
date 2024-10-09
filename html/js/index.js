@@ -1,11 +1,9 @@
-document.querySelector('#dark-mode-toggle').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
+// Toggle sidebar menu
+document.getElementById('menuButton').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle('active');
 });
 
-// Sidebar
-const menuButton = document.getElementById('menuButton');
-const Sidebar = document.getElementById('sidebar');
-
-menuButton.addEventListener('click', function() {
-    Sidebar.classList.toggle('active');
+// Toggle dark mode
+document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
 });

@@ -20,33 +20,73 @@
             </ul>
         </nav>
     </header>
-    <div class="sidebar" id="sidebar">
-        <button class="sidebar-button" id="menuButton"><span class="material-symbols-outlined">menu</span></button>
-        <div class="sidebar-content">
 
+    <button class="sidebar-button" id="menuButton"><span class="material-symbols-outlined">menu</span></button>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <header class="mobile">
+                <nav>
+                    <ul class="ListButtons">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About us</a></li>
+                        <li><a href="ContactUS.html">Contact us</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Register.html">Register</a></li> 
+                        <button id="dark-mode-toggle"><span class="material-symbols-outlined">dark_mode</span></button>                
+                    </ul>
+                </nav>
+            </header>
         </div>
     </div>
+
     <main>
         <section>
-            <h1>
+            <h1 class="logo">
                 <img src="../Photos/Logo.png" alt="Website logo">
                 BeautyBook
             </h1>
-            <h2>Welcome to BeautyBook!</h2>
         </section>
 
-        <section class="service-section">
-            <h2>What to book?</h2>
-            <div class="buttons-container">
-                <a href="Beauty.html" class="service-button">Beauty & Wellness</a>
-                <a href="Fitness.html" class="service-button">Sports & Fitness</a>
-                <a href="Health.html" class="service-button">Health & Medical</a>
+        <h1>What to book?</h1>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="../Photos/Beauty.jpg" alt="">
+                <p>Do you want to schedule a hairdresser or go to a manicure?</p>
+                <section class="service-section">
+                    <div class="buttons-container">
+                        <a href="Beauty.html" class="service-button">Beauty & Wellness</a>
+                    </div>
+                </section>
             </div>
-        </section>
+
+            <div class="card">
+                <img src="../Photos/health.png" alt="">
+                <p>Do you want to schedule health checks or various massages?</p>
+                <section class="service-section">
+                    <div class="buttons-container">
+                        <a href="Health.html" class="service-button">Health & Medicine</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card">
+                <img src="../Photos/Fitness.webp" alt="">
+                <p>Do you want to schedule fitness trainers or buy a subscription at a gym or rent some inventar?</p>
+                <section class="service-section"></section>
+                    <div class="buttons-container">
+                        <a href="Fitness.html" class="service-button">Sports & Fitness</a>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
+
     <footer>
         BeautyBook is the only website like this!
     </footer>
+
     <script src="js/index.js"></script>
 </body>
 </html>
