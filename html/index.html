@@ -8,38 +8,42 @@
     <title>BeautyBook</title>
 </head>
 <body>
+    <!-- Header for Desktop -->
     <header>
         <nav>
             <ul class="ListButtons">
+                <button id="dark-mode-toggle"><span class="material-symbols-outlined">dark_mode</span></button>
+
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About us</a></li>
                 <li><a href="ContactUS.html">Contact us</a></li>
                 <li><a href="Login.html">Login</a></li>
                 <li><a href="Register.html">Register</a></li>
-                <button id="dark-mode-toggle"><span class="material-symbols-outlined">dark_mode</span></button>
             </ul>
         </nav>
     </header>
 
-    <button class="sidebar-button" id="menuButton"><span class="material-symbols-outlined">menu</span></button>
+    <!-- Sidebar Button for Mobile -->
 
+    <!-- Sidebar for Mobile -->
     <div class="sidebar" id="sidebar">
+        <button class="sidebar-button"><span class="material-symbols-outlined" id="menuButton">menu</span></button>
         <div class="sidebar-content">
-            <header class="mobile">
-                <nav>
-                    <ul class="ListButtons">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About us</a></li>
-                        <li><a href="ContactUS.html">Contact us</a></li>
-                        <li><a href="Login.html">Login</a></li>
-                        <li><a href="Register.html">Register</a></li> 
-                        <button id="dark-mode-toggle"><span class="material-symbols-outlined">dark_mode</span></button>                
-                    </ul>
-                </nav>
-            </header>
+            <!-- Mobile Navigation -->
+            <nav>
+                <ul class="ListButtons">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About us</a></li>
+                    <li><a href="ContactUS.html">Contact us</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                </ul>
+            </nav>
+            <button id="dark-mode-toggle"><span class="material-symbols-outlined">dark_mode</span></button>
         </div>
     </div>
 
+    <!-- Main Content -->
     <main>
         <section>
             <h1 class="logo">
@@ -74,11 +78,11 @@
             <div class="card">
                 <img src="../Photos/Fitness.webp" alt="">
                 <p>Do you want to schedule fitness trainers or buy a subscription at a gym or rent some inventar?</p>
-                <section class="service-section"></section>
+                <section class="service-section">
                     <div class="buttons-container">
                         <a href="Fitness.html" class="service-button">Sports & Fitness</a>
                     </div>
-                </section>
+                </section> <!-- Moved this closing tag to the correct place -->
             </div>
         </div>
     </main>
