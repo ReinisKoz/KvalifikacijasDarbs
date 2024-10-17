@@ -1,18 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(/Photos/back.jpg);
+    background-color: #f4f4f4;
+    background-image: url('/Photos/back.jpg');
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
-
 header {
     background-color: #333;
     padding: 10px;
-    align-items: center8;
+    align-items: center;
 }
 
 .ListButtons {
@@ -20,14 +20,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.ListButtons button {
-    cursor: pointer;
-}
-
-.ListButtons li {
-    margin-right: 15px;
 }
 
 .ListButtons li a {
@@ -43,10 +35,49 @@ header {
     background-color: #777;
 }
 
+.ListButtons button {
+    cursor: pointer;
+}
+
+.ListButtons li {
+    margin-right: 15px;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    display: none;
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 5px;
+    top: 50px;
+    list-style: none;
+    min-width: 150px;
+    z-index: 999;
+}
+
+ul li ul.dropdown li {
+    margin: 0;
+}
+
+ul li ul.dropdown li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown li a:hover {
+    background-color: #555;
+}
+
 main {
     flex: 1;
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 h1 img {
@@ -67,7 +98,6 @@ h1 {
 
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
 }
 
@@ -147,6 +177,10 @@ footer {
     padding: 10px 0;
 }
 
+
+.dark-mode .card{
+    background-color: #2e2929;
+}
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -154,15 +188,29 @@ body.dark-mode {
 }
 
 .dark-mode nav {
-    background-color: #333;
+    background-color: #222;
 }
 
-.dark-mode .ListButtons a {
+.dark-mode .ListButtons a, 
+.dark-mode .ListButtons button {
+    color: #ddd;
+}
+
+.dark-mode .ListButtons a:hover {
+    background-color: #444;
+}
+
+.dark-mode h1, 
+.dark-mode p {
     color: #ffffff;
 }
 
-.dark-mode .service-button {
-    background-color: #2c2c2c;
+.dark-mode ul.dropdown {
+    background-color: #222;
+}
+
+.dark-mode ul.dropdown li a:hover {
+    background-color: #555;
 }
 
 .sidebar {
@@ -199,8 +247,7 @@ body.dark-mode {
 
 @media (max-width: 768px) {
     .card-container {
-        flex-direction: column;
-        align-items: center;
+        display: flexbox;
     }
 
     .ListButtons {
@@ -226,3 +273,4 @@ body.dark-mode {
         display: none;
     }
 }
+

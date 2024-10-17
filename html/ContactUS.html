@@ -1,20 +1,37 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Multilingual Website</title>
     <link rel="stylesheet" href="css/contact.css">
-    <title>Document</title>
+    <script src="js/index.js" defer></script>
 </head>
+<header>
+    <nav>
+        <ul class="ListButtons">
+            <button id="dark-mode-toggle"><span class="material-symbols-outlined">dark_mode</span></button>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="ContactUS.html">Contact us</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="#">Languages</a>
+                <ul class="dropdown">
+                    <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="#" onclick="changeLanguage('fr')">French</a></li>
+                    <li><a href="#" onclick="changeLanguage('lv')">Latvian</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
 <body>
-    <ul>
-        <li>
-            <a href="#">Languages</a>
-            <ul class="dropdown">
-                <li><a href="#">English</a></li>
-                <li><a href="#">French</a></li>
-                <li><a href="#">Latvian</a></li>
-            </ul>
-        </li>
-    </ul>
+    <main>
+        <h1 data-lang="title">Welcome to our website!</h1>
+        <p data-lang="contact">Contact us</p>
+    </main>
 </body>
 </html>
