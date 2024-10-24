@@ -1,12 +1,26 @@
+// Header visiem pages 
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading the header:', error));
+});
+
 // sidebar 
 document.getElementById('menuButton').addEventListener('click', function() {
     document.getElementById('sidebar').classList.toggle('active');
 });
 
 // dark mode
-document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-});
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+}
 
 function changeLanguage(lang) {
     const elements = document.querySelectorAll("[data-lang]");
