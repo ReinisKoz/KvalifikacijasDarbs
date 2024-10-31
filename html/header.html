@@ -19,3 +19,27 @@
         </ul>
     </nav>
 </header>
+
+<div class="sidebar" id="sidebar">
+    <button class="sidebar-button"><span class="material-symbols-outlined" id="menuButton">menu</span></button>
+    <div class="sidebar-content">
+        <!-- Mobilas versijas content -->
+        <nav>
+            <ul class="ListButtons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="ContactUS.html">Contact us</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Register.html">Register</a></li>
+                <li><a href="#">Languages</a>
+                    <ul class="dropdown">
+                        <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                        <li><a href="#" onclick="changeLanguage('fr')">French</a></li>
+                        <li><a href="#" onclick="changeLanguage('lv')">Latvian</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle"><span class="material-symbols-outlined">dark_mode</span></button>
+    </div>
+</div>

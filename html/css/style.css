@@ -178,7 +178,6 @@ footer {
     padding: 10px 0;
 }
 
-
 .dark-mode .card{
     background-color: #2e2929;
 }
@@ -231,6 +230,7 @@ body.dark-mode {
 
 .sidebar-content {
     margin-top: 50px;
+    justify-content: center;
 }
 
 .sidebar.active {
