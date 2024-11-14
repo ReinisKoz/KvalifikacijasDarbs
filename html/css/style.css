@@ -230,7 +230,31 @@ body.dark-mode {
 
 .sidebar-content {
     margin-top: 50px;
-    justify-content: center;
+    background-color: #ffffff; /* Base background color */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle shadow for depth */
+    color: #fff; /* White text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sidebar-content .ListButtons li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+.sidebar-content .ListButtons li{
+    margin: 50px;
+    margin-top: auto;
 }
 
 .sidebar.active {
